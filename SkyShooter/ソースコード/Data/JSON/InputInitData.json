@@ -1,0 +1,18 @@
+{
+	"InputInitData":[
+		{
+			"ACTION":"OK",
+			"Key":[0,0x1C],
+			"Button":[1,1],
+			"Stick":[3,12],
+			"Mouse":[2,0x0001]
+		},
+		{
+			"ACTION":"SELECT_UP",
+			"Key":[0xC8,0x11],
+			"Button":[12],
+			"Stick":[1,0],
+			"Mouse":0
+		}
+	]
+}
