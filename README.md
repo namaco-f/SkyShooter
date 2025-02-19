@@ -6,4 +6,4 @@ OS:Window10/11
 言語:C++20,HLSL
 使用ライブラリ等:DXライブラリ(ver3.24d),nlohmannJSON,Effekseer
 
-動画URL:(https://youtu.be/P4ZNIFt8S7I)
+動画URL:(https://youtu.be/TO_S_CroobQ)
