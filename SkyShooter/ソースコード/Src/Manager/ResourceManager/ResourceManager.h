@@ -1,7 +1,4 @@
 #pragma once
-
-//リソース管理クラスの管理
-
 #include <memory>
 #include <functional>
 #include <list>

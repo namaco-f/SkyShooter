@@ -1,5 +1,4 @@
 #pragma once
-
 #include <mutex>
 #include "ModelResource.h"
 #include "../ResourcesManagerTemplate.h"

@@ -22,32 +22,20 @@ ShaderManager::ShaderManager(void)
 {
 	AddResourceMap(
 		SRC_SHADER::UV_SCROLL,
-		"UVScroll/UVScrollPS.pso", 2,
-		"UVScroll/UVScrollVS.vso",1
+		"UVScroll/uv_scroll.pso", 2,
+		"UVScroll/uv_scroll.vso",1
 	);
 
 	AddResourceMap(
 		SRC_SHADER::STANDARD_MODEL,
-		"Standard/StandardModelPS.pso", 1,
-		"Standard/StandardModelVS.vso", 3
+		"Standard/model_standard.pso", 1,
+		"Standard/model_standard.vso", 3
 	);
-
-	//AddResourceMap(
-	//	SRC_SHADER::MRT_TEST,
-	//	"MRT/MRT_TestPS.pso", 2,
-	//	"MRT/MRT_TestVS.vso",1
-	//);
-
-	//AddResourceMap(
-	//	SRC_SHADER::TRAIL_TEST,
-	//	"TrailPS.pso", 3,
-	//	"TrailVS.vso",0
-	//);
 
 	AddResourceMap(
 		SRC_SHADER::BOX_SHADER,
-		"EnemyAttackBoxPS.pso", 3,
-		"EnemyAttackBoxVS.vso", 2
+		"enemy_attack_box.pso", 3,
+		"enemy_attack_box.vso", 2
 	);
 }
 

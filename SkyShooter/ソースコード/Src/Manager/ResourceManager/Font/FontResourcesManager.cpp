@@ -1,4 +1,3 @@
-
 #include "../../../Application.h"
 #include "FontResourcesManager.h"
 
@@ -6,11 +5,20 @@ using namespace std;
 
 FontResourcesManager::FontResourcesManager(void)
 {
-	AddResourceMap(SRC_FONT::Pgothic_s60, "MS_Pgothic_s60.dft",3);
-	AddResourceMap(SRC_FONT::Pgothic_s50, "MS_Pgothic_s50.dft",3);
-	AddResourceMap(SRC_FONT::Pgothic_s40, "MS_Pgothic_s40.dft",3);
-	AddResourceMap(SRC_FONT::Pgothic_s32, "MS_Pgothic_s32.dft",2);
-	AddResourceMap(SRC_FONT::Pgothic_s20, "MS_Pgothic_s20.dft",2);
+	//サイズ60のpゴシック
+	AddResourceMap(SRC_FONT::Pgothic_s60, "ms_p_gothic_s60.dft",3);
+
+	//サイズ50のpゴシック
+	AddResourceMap(SRC_FONT::Pgothic_s50, "ms_p_gothic_s50.dft",3);
+
+	//サイズ40のpゴシック
+	AddResourceMap(SRC_FONT::Pgothic_s40, "ms_p_gothic_s40.dft",3);
+
+	//サイズ32のpゴシック
+	AddResourceMap(SRC_FONT::Pgothic_s32, "ms_p_gothic_s32.dft",2);
+
+	//サイズ20のpゴシック
+	AddResourceMap(SRC_FONT::Pgothic_s20, "ms_p_gothic_s20.dft",2);
 }
 
 FontResourcesManager::~FontResourcesManager(void)

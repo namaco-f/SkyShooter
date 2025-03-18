@@ -1,5 +1,3 @@
-
-
 #include <DxLib.h>
 #include "SoundResourcesManager.h"
 

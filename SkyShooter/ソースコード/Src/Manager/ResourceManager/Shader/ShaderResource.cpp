@@ -1,7 +1,4 @@
-
-
 #include "../Application.h"
-
 #include "../Renderer/Material/PixelMaterial.h"
 #include "../Renderer/Material/VertexsMaterial.h"
 #include "../Renderer/Renderer.h"

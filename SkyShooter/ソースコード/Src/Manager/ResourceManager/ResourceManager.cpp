@@ -1,5 +1,3 @@
-
-
 #include <functional>
 #include "Model/ModelResourcesManager.h"
 #include "Sound/SoundResourcesManager.h"

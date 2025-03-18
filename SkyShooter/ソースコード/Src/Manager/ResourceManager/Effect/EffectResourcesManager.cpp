@@ -6,12 +6,23 @@ EffectResourcesManager::EffectResourcesManager(void)
 	:
 	ResourcesManagerTemplate()
 {
-	AddResourceMap(SRC_EFFECT::HIT, "BlastShot/Blast.efk", USESCENE_GAME_ONLY);
-	AddResourceMap(SRC_EFFECT::ULT, "Ult/Ult_Laser/Ult_Laser.efk", USESCENE_GAME_ONLY);
-	AddResourceMap(SRC_EFFECT::WARP, "Warp/Warp.efk", USESCENE_GAME_ONLY);
-	AddResourceMap(SRC_EFFECT::SLASTER, "Enemy_Slaster/Slaster.efk", USESCENE_GAME_ONLY);
-	AddResourceMap(SRC_EFFECT::SHIELD, "Shield/Shield.efk", USESCENE_GAME_ONLY);
-	AddResourceMap(SRC_EFFECT::ULT_CHARGE, "Ult/Ult_Charge/Ult_Charge.efk", USESCENE_GAME_ONLY);
+	//ヒット
+	AddResourceMap(SRC_EFFECT::HIT, "BlastShot/blast.efk", USESCENE_GAME_ONLY);
+
+	//ウルト
+	AddResourceMap(SRC_EFFECT::ULT, "Ult/Ult_Laser/ult_laser.efk", USESCENE_GAME_ONLY);
+
+	//ワープ
+	AddResourceMap(SRC_EFFECT::WARP, "Warp/warp.efk", USESCENE_GAME_ONLY);
+
+	//スラスター
+	AddResourceMap(SRC_EFFECT::SLASTER, "Enemy_Slaster/enemy_slaster.efk", USESCENE_GAME_ONLY);
+
+	//シールド
+	AddResourceMap(SRC_EFFECT::SHIELD, "Shield/shield.efk", USESCENE_GAME_ONLY);
+
+	//ウルトチャージ
+	AddResourceMap(SRC_EFFECT::ULT_CHARGE, "Ult/Ult_Charge/ult_charge.efk", USESCENE_GAME_ONLY);
 }
 
 EffectResourcesManager::~EffectResourcesManager(void)

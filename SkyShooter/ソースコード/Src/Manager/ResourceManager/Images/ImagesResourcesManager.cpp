@@ -6,16 +6,11 @@ ImagesResourcesManager::ImagesResourcesManager(void)
 	:
 	ResourcesManagerTemplate()
 {
-	AddResourceMap(
-		SRC_IMAGES::KEY_ENTER,
-		"UI/ControllerType/Keyboard/key/Enter/ENTER.png",
-		Vector2(2, 1),
-		Vector2(42, 31)
-	);
-
+	//複数画像
+	//ローディング画像
 	AddResourceMap(
 		SRC_IMAGES::LOADING,
-		"UI/Loading/Loading.png",
+		"UI/Loading/loading.png",
 		Vector2(12, 1),
 		Vector2(131, 128),
 		USESCENE_ALL

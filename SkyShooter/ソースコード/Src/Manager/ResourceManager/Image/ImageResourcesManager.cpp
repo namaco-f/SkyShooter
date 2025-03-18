@@ -1,4 +1,3 @@
-
 #include "../../../Application.h"
 #include "ImageResourcesManager.h"
 
@@ -8,39 +7,67 @@ ImageResourcesManager::ImageResourcesManager(void)
 	:
 	ResourcesManagerTemplate()
 {
-	AddResourceMap(
-		SRC_IMAGE::WATERWAVE_CUBE_TEX, "Texture/Stage/Water/Water.png");
-	AddResourceMap(
-		SRC_IMAGE::TrailTexture, "Texture/Trail.png",USESCENE_GAME_ONLY);
-	AddResourceMap(SRC_IMAGE::CircleShadow, "Shadow/Shadow.png", USESCENE_GAME_ONLY);
-	AddResourceMap(SRC_IMAGE::Keyboard_Mouse, "UI/Keyboard/Keyboard_Mouse.png", USESCENE_TITLE_ONLY);
-	AddResourceMap(SRC_IMAGE::Controller, "UI/Xbox/Controller.png", USESCENE_TITLE_ONLY);
-	AddResourceMap(SRC_IMAGE::TitleLogo, "Text/AGS2025w_TitleLogo_3.png",USESCENE_TITLE_ONLY);
-	AddResourceMap(SRC_IMAGE::Cursor, "UI/Cursor.png",USESCENE_ALL);
-	AddResourceMap(SRC_IMAGE::Arrow	 , "UI/Arrow.png", USESCENE_ALL);
-	AddResourceMap(SRC_IMAGE::ClearText, "Text/Clear_Text3.png");
-	AddResourceMap(SRC_IMAGE::LoadEnd_Start, "Text/Start_Text.png",USESCENE_ALL);
+	//軌跡テクスチャ
+	AddResourceMap(SRC_IMAGE::TrailTexture,"Texture/trail.png",USESCENE_GAME_ONLY);
+	
+	//丸影
+	AddResourceMap(SRC_IMAGE::CircleShadow,"Shadow/shadow.png", USESCENE_GAME_ONLY);
+	
+	//キーマウ画像
+	AddResourceMap(SRC_IMAGE::Keyboard_Mouse,"UI/Keyboard/keyboard_mouse.png", USESCENE_TITLE_ONLY);
+	
+	//コントローラー画像
+	AddResourceMap(SRC_IMAGE::Controller,"UI/Xbox/controller.png", USESCENE_TITLE_ONLY);
+	
+	//タイトルロゴ
+	AddResourceMap(SRC_IMAGE::TitleLogo,"Text/titlelogo.png",USESCENE_TITLE_ONLY);
+	
+	//カーソル画像
+	AddResourceMap(SRC_IMAGE::Cursor,"UI/cursor.png",USESCENE_ALL);
+	
+	//矢印画像
+	AddResourceMap(SRC_IMAGE::Arrow,"UI/arrow.png", USESCENE_ALL);
+	
+	//クリアテキスト画像
+	AddResourceMap(SRC_IMAGE::ClearText,"Text/clear.png");
+	
+	//ロード終了テキスト画像
+	AddResourceMap(SRC_IMAGE::LoadEnd_Start,"Text/start.png",USESCENE_ALL);
+	
+	//コントローラー操作説明画像
 	AddResourceMap(
 		SRC_IMAGE::OperationInstructions_Controller, 
-		"UI/OperationInstructions_Controller.png",USESCENE_ALL);
+		"UI/instructions_controller.png",USESCENE_ALL);
+	
+	//キーボード操作説明画像
 	AddResourceMap(
 		SRC_IMAGE::OperationInstructions_KeyBoard, 
-		"UI/OperationInstructions_KeyBoard.png",USESCENE_ALL);
+		"UI/instructions_keyboard.png",USESCENE_ALL);
+	
+	//hpテキスト画像
 	AddResourceMap(
 		SRC_IMAGE::HP_TEXT,
-		"Text/HP.png", USESCENE_GAME_ONLY);
+		"Text/hp.png", USESCENE_GAME_ONLY);
+	
+	//mpテキスト画像
 	AddResourceMap(
 		SRC_IMAGE::MP_TEXT,
-		"Text/MP_s20.png", USESCENE_GAME_ONLY);
+		"Text/mp_s20.png", USESCENE_GAME_ONLY);
+	
+	//seテキスト画像
 	AddResourceMap(
 		SRC_IMAGE::SE_TEXT,
-		"Text/SE.png", USESCENE_ALL);
+		"Text/se.png", USESCENE_ALL);
+	
+	//bgmテキスト画像
 	AddResourceMap(
 		SRC_IMAGE::BGM_TEXT,
-		"Text/BGM.png", USESCENE_ALL);
+		"Text/bgm.png", USESCENE_ALL);
+	
+	//ボス敵テキスト画像
 	AddResourceMap(
 		SRC_IMAGE::BOSS_ENEMY_TEXT,
-		"Text/BossEnemy.png", USESCENE_GAME_ONLY);
+		"Text/enemy_boss.png", USESCENE_GAME_ONLY);
 }
 
 ImageResourcesManager::~ImageResourcesManager(void)

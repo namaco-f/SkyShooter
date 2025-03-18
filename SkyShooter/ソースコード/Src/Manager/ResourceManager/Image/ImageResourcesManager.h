@@ -1,5 +1,4 @@
 #pragma once
-
 #include "../ResourcesManagerTemplate.h"
 #include"ImageResource.h"
 

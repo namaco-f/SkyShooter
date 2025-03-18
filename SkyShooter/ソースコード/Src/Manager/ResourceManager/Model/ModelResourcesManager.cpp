@@ -1,4 +1,3 @@
-
 #include <Dxlib.h>
 #include <algorithm>
 #include "ModelResourcesManager.h"
@@ -9,45 +8,67 @@ ModelResourcesManager::ModelResourcesManager(void)
 	:
 	ResourcesManagerTemplate()
 {
+	//モデル
+	//プレイヤー
 	AddResourceMap(
-		SRC_MODEL::BOT_X,"Mixamo/X_Bot.mv1",
+		SRC_MODEL::BOT_X,"Mixamo/x_bot.mv1",
 		USESCENE_GAME_ONLY
 	);
+
+	//水面
 	AddResourceMap(
-		SRC_MODEL::Idle, "Animation/Mixamo/Idle.mv1",
-		USESCENE_GAME_ONLY
-	);
-	AddResourceMap(
-		SRC_MODEL::Flying, "Animation/Mixamo/Flying.mv1",
-		USESCENE_GAME_ONLY
-	);
-	AddResourceMap(
-		SRC_MODEL::WATERWAVE_CUBE, "Stage/Water/WaterWaveCube.mv1",
+		SRC_MODEL::WATERWAVE_CUBE, "Stage/Water/waterwave_cube.mv1",
 		USESCENE_ALL
 	);
-	AddResourceMap(SRC_MODEL::SKYDOME, "Stage/Skydome/Skydome.mv1",
+
+	//スカイドーム
+	AddResourceMap(SRC_MODEL::SKYDOME, "Stage/Skydome/skydome.mv1",
 		USESCENE_ALL
 	);
-	AddResourceMap(SRC_MODEL::SHOT, "Shot/Shot.mv1",
+
+	//弾
+	AddResourceMap(SRC_MODEL::SHOT, "Shot/shot.mv1",
 		USESCENE_GAME_ONLY
 	);
+
+	//ボス敵
 	AddResourceMap(
-		SRC_MODEL::ENEMY, "Enemy/uploads_files_3373629_star+ship.mv1",
+		SRC_MODEL::ENEMY, "Enemy/boss.mv1",
 		USESCENE_GAME_ONLY
 	);
+
+	//ボス矩形攻撃
 	AddResourceMap(
-		SRC_MODEL::ENEMY_BOXATTACK_CUBE, "Primitive/Cube/PrimitiveModel_Cube.mv1",
+		SRC_MODEL::ENEMY_BOXATTACK_CUBE, "Primitive/Cube/primitive_cube.mv1",
 		USESCENE_GAME_ONLY
 	);
+
+	AddResourceMap(SRC_MODEL::Plane, "Primitive/Plane/plane.mv1");
+
+	//アニメーション
+	//静止
 	AddResourceMap(
-		SRC_MODEL::Attack, "Animation/Mixamo/Player/Mutant_Swiping.mv1",
+		SRC_MODEL::Idle, "Animation/Mixamo/idle.mv1",
 		USESCENE_GAME_ONLY
 	);
+
+	//飛行
 	AddResourceMap(
-		SRC_MODEL::UltAttack, "Animation/Mixamo/Player/Magic_Attack_02.mv1",
+		SRC_MODEL::Flying, "Animation/Mixamo/flying.mv1",
 		USESCENE_GAME_ONLY
 	);
-	AddResourceMap(SRC_MODEL::Plane, "Primitive/Plane/Plane.mv1");
+
+	//攻撃モーション
+	AddResourceMap(
+		SRC_MODEL::Attack, "Animation/Mixamo/Player/attack.mv1",
+		USESCENE_GAME_ONLY
+	);
+
+	//ウルトモーション
+	AddResourceMap(
+		SRC_MODEL::UltAttack, "Animation/Mixamo/Player/ult_attack.mv1",
+		USESCENE_GAME_ONLY
+	);
 }
 
 ModelResourcesManager::~ModelResourcesManager(void)

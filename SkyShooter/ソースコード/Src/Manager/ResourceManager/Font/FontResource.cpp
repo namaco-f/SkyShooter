@@ -1,4 +1,3 @@
-
 #include <Dxlib.h>
 #include "../Application.h"
 #include "FontResource.h"

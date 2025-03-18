@@ -1,6 +1,4 @@
 #pragma once
-
-
 #include "../ResourcesManagerTemplate.h"
 #include "SoundResource.h"
 
